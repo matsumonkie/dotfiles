@@ -13,6 +13,6 @@ function f {
 unsetopt correct
 unsetopt correct_all
 
-alias bd='~/conf/kbd/kbd.rb'
+alias bd='~/.kbd/kbd.rb'
 alias n='setxkbmap fr'
-alias bepo='xkbcomp -w 0 -R/usr/share/X11/xkb ~/conf/kbd/vaio_bepo $DISPLAY'
+alias bepo='xkbcomp -w 0 -R/usr/share/X11/xkb ~./kbd/vaio_bepo $DISPLAY'
