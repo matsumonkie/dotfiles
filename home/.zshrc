@@ -1,7 +1,3 @@
-#source /usr/local/share/chruby/chruby.sh
-#source /usr/local/share/chruby/auto.sh
-#chruby $(cat ~/.ruby-version)
-
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 
@@ -28,38 +24,10 @@ COMPLETION_WAITING_DOTS="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(git)
 
-# Aliases
-alias e='emacs -nw'
-#alias emacs='emacs -mm'
-alias a='ack-grep'
-alias -g G='| grep'
-alias -g L='| less'
-alias -g A='| a'
-alias n='setxkbmap fr'
-alias bd='~/conf/kbd/kbd.rb'
-
-function f {
-    find . -iname "*$1*"
-}
-
-# No auto correct
-unsetopt correct
-unsetopt correct_all
-
-alias bepo='xkbcomp -w 0 -R/usr/share/X11/xkb ~/conf/kbd/vaio_bepo $DISPLAY'
 
 source $ZSH/oh-my-zsh.sh
-
-PATH="$PATH:/opt/sbt:/opt/play"
-
-myBin=$('ls' -d /opt/**/bin | tr '\n' ':')
-PATH="$PATH:$myBin"
+source $HOME/.path
+source $HOME/.aliases
 
 PS1="$PS1
 ⮀ "
-
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
-
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-
