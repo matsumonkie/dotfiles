@@ -1,4 +1,5 @@
 ack-grep
+aptitude
 build-essential
 chrome
 emacs-goodies-el
@@ -14,6 +15,7 @@ p7zip
 redshift
 spotify-client
 terminator
+tmux
 transmission
 tree
 unrar
