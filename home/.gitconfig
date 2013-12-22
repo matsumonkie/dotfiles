@@ -1,0 +1,9 @@
+[user]
+  name = Iori Matsuhara
+  email = matsuhar@gmail.com
+[color]
+  ui = true
+[core]
+	editor = nano
+  excludesfile = ~/.gitignore
+  pager = less -FRSX
