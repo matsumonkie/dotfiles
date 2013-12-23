@@ -1,6 +1,9 @@
-alias e='emacs -nw'
-alias a='ack-grep'
+# Zsh
+# No auto correct
+unsetopt correct
+unsetopt correct_all
 
+# System
 alias -g G='| grep'
 alias -g L='| less'
 alias -g A='| a'
@@ -9,10 +12,18 @@ function f {
     find . -iname "*$1*"
 }
 
-# No auto correct
-unsetopt correct
-unsetopt correct_all
+# Emacs
+alias e='emacs -nw'
+alias a='ack-grep'
 
+# Keyboard
 alias bd='~/.kbd/kbd.rb'
 alias n='setxkbmap fr'
 alias bepo='xkbcomp -w 0 -R/usr/share/X11/xkb ~./kbd/vaio_bepo $DISPLAY'
+
+# Ruby
+alias b='bundle install'
+alias ge='gem environment'
+
+alias rs='rails server'
+alias rc='rails console'
