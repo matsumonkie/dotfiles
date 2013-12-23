@@ -22,8 +22,20 @@ alias n='setxkbmap fr'
 alias bepo='xkbcomp -w 0 -R/usr/share/X11/xkb ~./kbd/vaio_bepo $DISPLAY'
 
 # Ruby
-alias b='bundle install'
 alias ge='gem environment'
+
+function b {
+  bundle "$1"
+}
+function be {
+  bundle exec "$1"
+}
+function bu {
+  bundle update "$1"
+}
+function bl {
+    bundle list
+}
 
 alias rs='rails server'
 alias rc='rails console'
