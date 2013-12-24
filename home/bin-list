@@ -1,25 +1,27 @@
-ack-grep
-aptitude
-build-essential
-chrome
-emacs-goodies-el
-emacs24
-firefox
-gimp
-git-core
-gnome-do
-gtk-redshift
-htop
-nodejs
-p7zip
-redshift
-spotify-client
-terminator
-tmux
-transmission
-tree
-unrar
-unzip
-vlc
-zip
-zsh
+sudo apt-get install \
+  ack-grep             \
+  aptitude             \
+  build-essential      \
+  chrome               \
+  emacs-goodies-el     \
+  emacs24              \
+  firefox              \
+  gimp                 \
+  git-core             \
+  gnome-do             \
+  gtk-redshift         \
+  htop                 \
+  most                 \
+  nodejs               \
+  p7zip                \
+  redshift             \
+  spotify-client       \
+  terminator           \
+  tmux                 \
+  transmission         \
+  tree                 \
+  unrar                \
+  unzip                \
+  vlc                  \
+  zip                  \
+  zsh                  \
