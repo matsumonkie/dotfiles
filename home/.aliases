@@ -17,6 +17,9 @@ function f {
 alias e='emacs -nw'
 alias a='ack-grep'
 
+# Git
+alias gcam='git commit --amend -C HEAD'
+
 # Keyboard
 alias bd='~/.kbd/kbd.rb'
 alias n='setxkbmap fr'
