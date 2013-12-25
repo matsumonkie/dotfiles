@@ -10,6 +10,7 @@ alias -g A='| a'
 alias rm='trash'
 alias copy='xclip -selection clipboard'
 alias paste='xclip -o'
+alias tree='~/.bin/tree'
 
 function f {
     find . -iname "*$1*"
@@ -20,6 +21,7 @@ alias e='emacs -nw'
 alias a='ack-grep'
 
 # Git
+alias gs='git status -s'
 alias gcam='git commit --amend -C HEAD'
 
 # Keyboard
