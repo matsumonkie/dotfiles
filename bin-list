@@ -14,6 +14,7 @@ sudo apt-get install \
   most                 \
   nodejs               \
   p7zip                \
+  xclip                \
   redshift             \
   spotify-client       \
   terminator           \

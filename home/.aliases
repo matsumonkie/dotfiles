@@ -8,6 +8,7 @@ alias -g G='| grep'
 alias -g L='| less'
 alias -g A='| a'
 alias rm='trash'
+alias copy='xclip -selection clipboard'
 
 function f {
     find . -iname "*$1*"

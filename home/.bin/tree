@@ -1,0 +1,2 @@
+#tree with color and less as pager
+tree -aC -I ".git|tmp" --dirsfirst "$@" | less -FRNX
