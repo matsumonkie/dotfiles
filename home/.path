@@ -1,12 +1,15 @@
+# personnal bin in subdirectories in /opt
+myBin=$('ls' -d /opt/**/bin | tr '\n' ':')
+PATH="$PATH:$myBin"
+
+# personnal bin
+PATH="$PATH:~/.bin"
+
+# SBT
+PATH="$PATH:/opt/sbt:/opt/play"
+
 # Heroku
 export PATH="/usr/local/heroku/bin:$PATH"
 
 # RVM
 PATH="$PATH:$HOME/.rvm/bin"
-
-# personnal bin in /opt
-myBin=$('ls' -d /opt/**/bin | tr '\n' ':')
-PATH="$PATH:$myBin"
-
-# sbt
-PATH="$PATH:/opt/sbt:/opt/play"
