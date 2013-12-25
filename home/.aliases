@@ -9,6 +9,7 @@ alias -g L='| less'
 alias -g A='| a'
 alias rm='trash'
 alias copy='xclip -selection clipboard'
+alias paste='xclip -o'
 
 function f {
     find . -iname "*$1*"
