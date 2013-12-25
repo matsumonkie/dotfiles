@@ -7,10 +7,17 @@ unsetopt correct_all
 alias -g G='| grep'
 alias -g L='| less'
 alias -g A='| a'
+
+alias -g B='&& notify-send "\(^o^)/"'
 alias rm='trash'
 alias copy='xclip -selection clipboard'
 alias paste='xclip -o'
 alias tree='~/.bin/tree'
+alias r='exec $SHELL -l'
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
 
 function f {
     find . -iname "*$1*"
@@ -22,6 +29,8 @@ alias a='ack-grep'
 
 # Git
 alias gs='git status -s'
+alias gg="git log --pretty=oneline -n 20 --graph --abbrev-commit"
+alias gga="git log --graph --pretty=format:'%Cred%h%Creset %an: %s - %Creset %C(yellow)%d%Creset %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
 alias gcam='git commit --amend -C HEAD'
 
 # Keyboard

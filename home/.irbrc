@@ -7,3 +7,7 @@ alias pp ap
 require 'hirb'
 Hirb.enable
 extend Hirb::Console
+
+def r
+  reload!
+end

@@ -11,5 +11,6 @@ if [[ -z $1 ]]; then
     i=`expr $i + 1`
   done
 else
+  echo ${faces[$1]}
   echo -n ${faces[$1]} | xclip -selection clipboard
 fi
