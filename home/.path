@@ -3,7 +3,7 @@ myBin=$('ls' -d /opt/**/bin | tr '\n' ':')
 PATH="$PATH:$myBin"
 
 # personnal bin
-PATH="$PATH:~/.bin"
+PATH="$PATH:$HOME/.bin"
 
 # SBT
 PATH="$PATH:/opt/sbt:/opt/play"
