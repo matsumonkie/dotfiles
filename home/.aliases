@@ -23,6 +23,7 @@ alias .....="cd ../../../.."
 # completion
 alias t='tmux'
 alias tt='tmuxinator'
+alias ts='tmuxinator start'
 
 function f {
     find . -iname "*$1*"
