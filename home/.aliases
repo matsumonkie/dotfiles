@@ -40,10 +40,8 @@ alias bepo='xkbcomp -w 0 -R/usr/share/X11/xkb ~./kbd/vaio_bepo $DISPLAY'
 
 # Ruby
 alias ge='gem environment'
+alias b='bundle'
 
-function b {
-  bundle "$1"
-}
 function be {
   bundle exec "$1"
 }
