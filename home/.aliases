@@ -8,7 +8,7 @@ alias -g G='| grep'
 alias -g L='| less'
 alias -g A='| a'
 
-alias -g B='&& notify-send "\(^o^)/"'
+alias -g B='&& notify-send "\(^o^)/" || notify-send "(╯°□°）╯︵ ┻━┻"'
 alias rm='trash'
 alias copy='xclip -selection clipboard'
 alias paste='xclip -o'
