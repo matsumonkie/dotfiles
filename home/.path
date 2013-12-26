@@ -1,5 +1,7 @@
-# personnal bin in subdirectories in /opt
+# bin in subdirectories of /opt and ~/.bin
 myBin=$('ls' -d /opt/**/bin | tr '\n' ':')
+PATH="$PATH:$myBin"
+myBin=$('ls' -d ~/.bin/**/bin | tr '\n' ':')
 PATH="$PATH:$myBin"
 
 # personnal bin
