@@ -1,6 +1,9 @@
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 
+# Editor
+export EDITOR='emacs -nw'
+
 ZSH_THEME="agnoster"
 
 # Example aliases
@@ -24,10 +27,10 @@ COMPLETION_WAITING_DOTS="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(git)
 
-
 source $ZSH/oh-my-zsh.sh
 source $HOME/.path
 source $HOME/.aliases
+source $HOME/.bin/tmuxinator.zsh
 
 PS1="$PS1
 ⮀ "

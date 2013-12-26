@@ -19,6 +19,11 @@ alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
 
+# Tmux & Tmuxinator
+# completion
+alias t='tmux'
+alias tt='tmuxinator'
+
 function f {
     find . -iname "*$1*"
 }
