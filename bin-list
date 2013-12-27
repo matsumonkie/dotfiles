@@ -1,5 +1,5 @@
 sudo apt-get install \
-  ack-grep             \
+  the-silver-searcher  \
   aptitude             \
   build-essential      \
   chrome               \

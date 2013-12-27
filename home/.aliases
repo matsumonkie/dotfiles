@@ -18,9 +18,9 @@ alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
+alias a='ag'
 
 # Tmux & Tmuxinator
-# completion
 alias t='tmux'
 alias tt='tmuxinator'
 alias ts='tmuxinator start'
@@ -31,7 +31,6 @@ function f {
 
 # Emacs
 alias e='emacs -nw'
-alias a='ack-grep'
 
 # Git
 alias gs='git status -s'
@@ -47,16 +46,9 @@ alias bepo='xkbcomp -w 0 -R/usr/share/X11/xkb ~./kbd/vaio_bepo $DISPLAY'
 # Ruby
 alias ge='gem environment'
 alias b='bundle'
+alias be='bundle exec'
+alias bl='bundle list'
 
-function be {
-  bundle exec "$1"
-}
-function bu {
-  bundle update "$1"
-}
-function bl {
-    bundle list
-}
-
+# Rails
 alias rs='rails server'
 alias rc='rails console'
