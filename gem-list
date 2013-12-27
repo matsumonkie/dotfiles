@@ -36,3 +36,4 @@ sqlite3
 tmuxinator
 underscore-rails
 whenever
+zeus
