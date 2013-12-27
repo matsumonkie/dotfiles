@@ -50,5 +50,7 @@ alias be='bundle exec'
 alias bl='bundle list'
 
 # Rails
+alias z='zeus'
+alias zs='zeus start'
 alias rs='rails server'
 alias rc='rails console'
