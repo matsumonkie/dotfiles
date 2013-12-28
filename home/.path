@@ -1,17 +1,20 @@
-# bin in subdirectories of /opt and ~/.bin
-myBin=$('ls' -d /opt/**/bin | tr '\n' ':')
-PATH="$PATH:$myBin"
-myBin=$('ls' -d ~/.bin/**/bin | tr '\n' ':')
-PATH="$PATH:$myBin"
+# add arg(s) to current PATH var
+addToPATH() {
+  paths=
+  for i in "$@"; do
+    paths="$paths:$i"
+  done
+  PATH="$PATH$paths"
+}
 
-# personnal bin
-PATH="$PATH:$HOME/.bin"
+# bin folders in subdirectories of given arg 
+function binFoldersPathForFolder () {
+  'ls' -d $1/**/bin | tr '\n' ' '
+}
 
-# SBT
-PATH="$PATH:/opt/sbt:/opt/play"
-
-# Heroku
-export PATH="/usr/local/heroku/bin:$PATH"
-
-# RVM
-PATH="$PATH:$HOME/.rvm/bin"
+addToPATH $(binFoldersPathForFolder /opt)
+addToPATH $(binFoldersPathForFolder ~/.bin)
+addToPATH "$HOME/.bin"
+addToPATH /opt/sbt /opt/play
+addToPATH /usr/local/heroku/bin
+addToPATH "$HOME/.rvm/bin"
