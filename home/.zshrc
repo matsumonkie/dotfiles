@@ -16,6 +16,12 @@ export UPDATE_ZSH_DAYS=60
 # No duplicate
 setopt hist_ignore_all_dups
 
+# No autocorrect
+unsetopt correct_all
+unsetopt correct
+setopt nocorrectall
+DISABLE_CORRECTION="true"
+
 # Uncomment following line if you want to disable autosetting terminal title.
 # DISABLE_AUTO_TITLE="true"
 
