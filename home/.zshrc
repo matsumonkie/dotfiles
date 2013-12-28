@@ -4,11 +4,8 @@ ZSH=$HOME/.oh-my-zsh
 # Editor
 export EDITOR='emacs -nw'
 
+# Theme
 ZSH_THEME="agnoster"
-
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # Use autojump
 [[ -s ~/.autojump/etc/profile.d/autojump.sh ]] && . ~/.autojump/etc/profile.d/autojump.sh
@@ -18,6 +15,7 @@ export UPDATE_ZSH_DAYS=60
 
 # No duplicate
 setopt hist_ignore_all_dups
+
 # Uncomment following line if you want to disable autosetting terminal title.
 # DISABLE_AUTO_TITLE="true"
 
