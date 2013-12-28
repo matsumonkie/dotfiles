@@ -18,6 +18,7 @@ alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
+alias -- -="cd -"
 alias a='ag'
 
 # Tmux & Tmuxinator
