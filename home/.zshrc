@@ -16,6 +16,8 @@ alias ohmyzsh="mate ~/.oh-my-zsh"
 # Uncomment to change how many often would you like to wait before auto-updates occur? (in days)
 export UPDATE_ZSH_DAYS=60
 
+# No duplicate
+setopt hist_ignore_all_dups
 # Uncomment following line if you want to disable autosetting terminal title.
 # DISABLE_AUTO_TITLE="true"
 
