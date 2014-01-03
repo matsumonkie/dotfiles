@@ -1,3 +1,6 @@
+OS='MAC'
+# OS='LINUX'
+
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 
@@ -6,9 +9,7 @@ export EDITOR='emacs -nw'
 
 # Theme
 ZSH_THEME="agnoster"
-
-# Use autojump
-[[ -s ~/.autojump/etc/profile.d/autojump.sh ]] && . ~/.autojump/etc/profile.d/autojump.sh
+DEFAULT_USER="$USER"
 
 # Uncomment to change how many often would you like to wait before auto-updates occur? (in days)
 export UPDATE_ZSH_DAYS=60
@@ -31,12 +32,15 @@ COMPLETION_WAITING_DOTS="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git)
+plugins=(git autojump)
+
+# Chruby
+source /usr/local/share/chruby/chruby.sh && source /usr/local/opt/chruby/share/chruby/auto.sh
 
 source $ZSH/oh-my-zsh.sh
 source $HOME/.path
 source $HOME/.aliases
 source $HOME/.bin/tmuxinator.zsh
 
-PS1="$PS1
-⮀ "
+#PS1="$PS1
+#⮀ "

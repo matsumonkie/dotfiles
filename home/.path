@@ -9,11 +9,11 @@ addToPATH() {
 
 # bin folders in subdirectories of given arg 
 function binFoldersPathForFolder () {
-  'ls' -d $1/**/bin | tr '\n' ' '
+  paths='ls' -d $1/**/bin | tr '\n' ' '
 }
 
-addToPATH $(binFoldersPathForFolder /opt)
-addToPATH $(binFoldersPathForFolder ~/.bin)
+#addToPATH $(binFoldersPathForFolder /opt)
+#addToPATH $(binFoldersPathForFolder ~/.bin)
 addToPATH "$HOME/.bin"
 addToPATH /opt/sbt /opt/play
 addToPATH /usr/local/heroku/bin
