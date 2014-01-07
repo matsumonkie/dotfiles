@@ -66,3 +66,6 @@ alias zs='zeus start'
 alias rc='$( isZeusRunning && echo zeus c || echo rails c)'
 alias rs='$( isZeusRunning && echo zeus s || echo rails s)'
 alias rg='$( isZeusRunning && echo zeus g || echo rails g)'
+
+alias unicorn-stop='b exec cap unicorn:stop'
+alias unicorn-start='b exec cap unicorn:start'
