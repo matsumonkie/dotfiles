@@ -3,7 +3,6 @@ alias -g G='| grep'
 alias -g L='| less'
 alias -g A='| a'
 
-alias -g B='&& notify-send "\(^o^)/" || notify-send "(╯°□°）╯︵ ┻━┻"'
 alias -g B='&& terminal-notifier -message "\(^o^)/" -title "Success" || terminal-notifier -message "\(╯°□°）╯︵ ┻━┻" -title "Failure"'
 alias rm='trash'
 alias copy='xclip -selection clipboard'
@@ -39,7 +38,6 @@ function f {
 }
 
 # Emacs
-alias e='emacs -nw'
 alias e='/Applications/Emacs.app/Contents/MacOS/Emacs -nw'
 
 # Git
