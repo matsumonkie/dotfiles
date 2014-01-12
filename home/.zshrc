@@ -42,5 +42,5 @@ source $HOME/.path
 source $HOME/.aliases
 source $HOME/.bin/tmuxinator.zsh
 
-#PS1="$PS1
-#⮀ "
+PS1="$PS1
+⮀ "
