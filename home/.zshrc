@@ -35,7 +35,7 @@ COMPLETION_WAITING_DOTS="true"
 plugins=(git autojump)
 
 # Chruby
-source /usr/local/share/chruby/chruby.sh && source /usr/local/opt/chruby/share/chruby/auto.sh
+source /usr/local/share/chruby/chruby.sh
 
 source $ZSH/oh-my-zsh.sh
 source $HOME/.path
