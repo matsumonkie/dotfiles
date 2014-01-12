@@ -40,7 +40,6 @@ function f {
 
 # Emacs
 alias e='emacs -nw'
-alias e='/Applications/Emacs.app/Contents/MacOS/Emacs -nw'
 
 # Git
 alias gs='git status -s'
