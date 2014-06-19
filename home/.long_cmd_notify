@@ -1,0 +1,59 @@
+# notify for commands that last longer than this threshold
+CMD_DURATION_THRESHOLD=1
+
+# ignored these commands
+ignored_cmds=(
+  man
+  emacs
+  e
+  tree
+  irb
+  rails console
+  rc
+  top
+  htop
+  gd
+  history
+)
+
+# global variable that prevents from notifying if
+# user type Ctrl+C or anything that is not a command
+# a_cmd_was_entered=false
+
+# setup time cmd has been executed
+function preexec {
+  cmd_start_at=`now_in_min_and_sec`  
+  a_cmd_was_entered=true
+}
+
+# return only minutes and seconds of current time
+function now_in_min_and_sec {
+  date +"%M%S"
+}
+
+# before redrawing the prompt, notify if last command took longer than X sec
+function precmd {
+  last_cmd=`history | tail -n 1 | cut -d ' ' -f 4`
+  if [ ! -z $a_cmd_was_entered ] && $a_cmd_was_entered; then
+    cmd_status=$?
+    cmd_finished_at=`now_in_min_and_sec`
+    cmd_duration=$(( $cmd_finished_at - $cmd_start_at ))
+    if (( $cmd_duration > $CMD_DURATION_THRESHOLD )); then
+      if [[ $ignored_cmds[(r)$last_cmd] != $last_cmd ]]; then
+        notify_cmd_over $last_cmd $cmd_status
+      fi
+    fi
+  fi
+  
+  a_cmd_was_entered=false
+}
+
+function notify_cmd_over {
+  last_cmd_name=$1
+  last_cmd_status=$1
+  if (( $last_cmd_status == 0 )); then
+    notify-send "\(^o^)/ $last_cmd_name"
+  else
+    notify-send "(╯°□°）╯︵ ┻━┻ $last_cmd_name"
+  fi
+}
