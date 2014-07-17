@@ -36,6 +36,7 @@ plugins=(git autojump)
 
 # Chruby
 source /usr/local/share/chruby/chruby.sh
+source /usr/local/share/chruby/auto.sh
 
 source $ZSH/oh-my-zsh.sh
 source $HOME/.path
