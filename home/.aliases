@@ -5,6 +5,7 @@ alias -g A='| a'
 
 alias -g B='&& notify-send "\(^o^)/" || notify-send "(╯°□°）╯︵ ┻━┻"'
 alias -g B='&& terminal-notifier -message "\(^o^)/" -title "Success" || terminal-notifier -message "\(╯°□°）╯︵ ┻━┻" -title "Failure"'
+alias l='ls -1'
 alias rm='trash'
 alias copy='xclip -selection clipboard'
 alias paste='xclip -o'
@@ -40,7 +41,7 @@ function f {
 
 # Emacs
 alias e='emacs -nw'
-alias e='/Applications/Emacs.app/Contents/MacOS/Emacs -nw'
+#alias e='/Applications/Emacs.app/Contents/MacOS/Emacs -nw'
 
 # Git
 alias gs='git status -s'

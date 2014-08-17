@@ -1,5 +1,5 @@
-OS='MAC'
-# OS='LINUX'
+#OS='MAC'
+OS='LINUX'
 
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
@@ -8,7 +8,7 @@ ZSH=$HOME/.oh-my-zsh
 export EDITOR='emacs -nw'
 
 # Theme
-ZSH_THEME="agnoster"
+ZSH_THEME="ys"
 DEFAULT_USER="$USER"
 
 # Uncomment to change how many often would you like to wait before auto-updates occur? (in days)
