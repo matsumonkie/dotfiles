@@ -3,8 +3,8 @@ alias -g G='| grep'
 alias -g L='| less'
 alias -g A='| a'
 
-alias -g B='&& notify-send "\(^o^)/" || notify-send "(╯°□°）╯︵ ┻━┻"'
 alias -g B='&& terminal-notifier -message "\(^o^)/" -title "Success" || terminal-notifier -message "\(╯°□°）╯︵ ┻━┻" -title "Failure"'
+alias -g B='&& notify-send "\(^o^)/" || notify-send "(╯°□°）╯︵ ┻━┻"'
 alias l='ls -1'
 alias rm='trash'
 alias copy='xclip -selection clipboard'
@@ -72,3 +72,6 @@ alias rg='$( isZeusRunning && echo zeus g || echo rails g)'
 
 alias unicorn-stop='b exec cap unicorn:stop'
 alias unicorn-start='b exec cap unicorn:start'
+alias ggg='git log --pretty=oneline --graph --abbrev-commit'
+
+alias p='cd $(git rev-parse --show-toplevel)'

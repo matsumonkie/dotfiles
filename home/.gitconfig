@@ -4,10 +4,12 @@
 [color]
   ui = true
 [core]
-  editor = nano
+	editor = emacs -nw
   excludesfile = ~/.gitignore
   pager = less -FRSX
 [push]
 	default = simple
 [pull]
 	rebase = true
+[merge]
+	ff = false
