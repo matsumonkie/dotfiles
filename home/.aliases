@@ -75,3 +75,6 @@ alias unicorn-start='b exec cap unicorn:start'
 alias ggg='git log --pretty=oneline --graph --abbrev-commit'
 
 alias p='cd $(git rev-parse --show-toplevel)'
+take () {
+  mkdir -p "$@" && cd "$@"
+}
