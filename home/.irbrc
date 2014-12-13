@@ -1,23 +1,31 @@
+def r
+  reload!
+end
+
+def me
+  User.find_by(email: "f@f.f")
+end
+
+def plateau
+  Neighbourhood.find_by(code: "plateaumontroyal.montreal.montreal")
+end
+
 require 'irb/ext/save-history'
 # History configuration
 if defined? IRB.conf
-  IRB.conf[:SAVE_HISTORY] = 100
+  IRB.conf[:SAVE_HISTORY] = 10000
   IRB.conf[:HISTORY_FILE] = "#{ENV['HOME']}/.irb-history"
 end
 
 # Awesome print
 require 'awesome_print'
-#AwesomePrint.try(:irb!)
-#alias pp ap
+#AwesomePrint.irb!
+alias p ap
 
 # Hirb
 require 'hirb'
 Hirb.enable
 extend Hirb::Console
-
-def r
-  reload!
-end
 
 def bm(repetitions=100, &block)
   require 'benchmark'

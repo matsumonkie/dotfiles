@@ -48,6 +48,10 @@ alias gs='git status -s'
 alias gg="git log --pretty=oneline -n 20 --graph --abbrev-commit"
 alias gga="git log --graph --pretty=format:'%Cred%h%Creset %an: %s - %Creset %C(yellow)%d%Creset %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
 alias gcam='git commit --amend -C HEAD'
+function fix {
+  git commit -m "fixup!$*"
+}
+alias fax='echo "fixup! $*"'
 
 # Keyboard
 alias bd='~/.kbd/kbd.rb'
