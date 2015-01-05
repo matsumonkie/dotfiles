@@ -2,6 +2,6 @@ vendor/
 tmp/
 log/
 *min.js
-*xml
+*.xml
 *kml
 *json
