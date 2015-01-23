@@ -1,7 +1,7 @@
 vendor/
 tmp/
 log/
-*min.js
+*.min.js
 *.xml
-*kml
-*json
+*.kml
+*.json

@@ -44,6 +44,7 @@ alias e='emacs -nw'
 #alias e='/Applications/Emacs.app/Contents/MacOS/Emacs -nw'
 
 # Git
+alias gds='git diff --staged'
 alias gs='git status -s'
 alias gg="git log --pretty=oneline -n 20 --graph --abbrev-commit"
 alias gga="git log --graph --pretty=format:'%Cred%h%Creset %an: %s - %Creset %C(yellow)%d%Creset %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
@@ -92,4 +93,8 @@ function rebase {
 
 function fix {
   git commit -m "fixup! $*"
+}
+
+function foo {
+  echo "fixup! $*"
 }
