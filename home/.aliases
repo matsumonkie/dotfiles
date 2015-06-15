@@ -40,7 +40,7 @@ function f {
 }
 
 # Emacs
-alias e='emacs -nw'
+alias e='emacsclient -nw -t'
 #alias e='/Applications/Emacs.app/Contents/MacOS/Emacs -nw'
 
 # Git
@@ -98,3 +98,5 @@ function fix {
 function foo {
   echo "fixup! $*"
 }
+
+alias c='http --session="session-$RANDOM" --verify no --follow'

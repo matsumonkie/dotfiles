@@ -4,7 +4,7 @@
 [color]
   ui = true
 [core]
-	editor = emacs -nw
+	editor = emacsclient -nw -t
   excludesfile = ~/.gitignore
   pager = less -FRSX
 [push]
@@ -13,3 +13,5 @@
 	rebase = true
 [merge]
 	ff = false
+[rebase]
+	autosquash = true

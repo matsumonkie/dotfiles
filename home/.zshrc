@@ -5,7 +5,7 @@ OS='LINUX'
 ZSH=$HOME/.oh-my-zsh
 
 # Editor
-export EDITOR='emacs -nw'
+export EDITOR='emacsclient -nw -t'
 
 # Theme
 ZSH_THEME="ys"
@@ -35,13 +35,13 @@ COMPLETION_WAITING_DOTS="true"
 plugins=(git fasd)
 
 # Chruby
-source /usr/local/share/chruby/chruby.sh
-source /usr/local/share/chruby/auto.sh
+#source /usr/local/share/chruby/chruby.sh
+#source /usr/local/share/chruby/auto.sh
 
 source $ZSH/oh-my-zsh.sh
 source $HOME/.path
 source $HOME/.aliases
-source $HOME/.bin/tmuxinator.zsh
+#source $HOME/.bin/tmuxinator.zsh
 
 #PS1="$PS1
 #⮀ "
