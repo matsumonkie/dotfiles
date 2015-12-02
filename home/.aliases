@@ -106,4 +106,6 @@ function fix {
 
 alias c='http --session="session-$RANDOM" --verify no --follow'
 
-alias nix="nix-env"
+alias nixe="nix-env"
+alias nixc="nix-channel"
+alias nixs="nix-store"
