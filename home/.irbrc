@@ -2,12 +2,12 @@ def r
   reload!
 end
 
-def me
-  User.find_by(email: "f@f.f")
+def gp
+  User.find_by(email: "iori+gp@mail.com")
 end
 
-def plateau
-  Neighbourhood.find_by(code: "plateaumontroyal.montreal.montreal")
+def sp
+  User.find_by(email: "iori+sp@mail.com")
 end
 
 require 'irb/ext/save-history'
